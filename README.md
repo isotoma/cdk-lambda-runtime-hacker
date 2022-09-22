@@ -6,7 +6,7 @@ Note that this is definitely not safe in general. You might find that
 your code runs fine in the new runtime.
 
 ```typescript
-import { cdkLambdaRuntimeHack } from '../cdkv2';
+import { cdkLambdaRuntimeHack } from 'cdk-lambda-runtime-hacker';
 
 ...
 
@@ -22,4 +22,17 @@ cdkLambdaRuntimeHack(app, {
         runtimeTo: lambda.Runtime.NODEJS_12_X,
     }],
 });
+```
+
+## CDK v1 and v2
+
+The export from the top level is for CDK v2. However, you can import
+an equivalent function that works with CDK v1 as follows:
+```typescript
+import { cdkLambdaRuntimeHack } from 'cdk-lambda-runtime-hacker/cdkv1';
+```
+
+And, for consistency, CDK v2 is available as follows too:
+```typescript
+import { cdkLambdaRuntimeHack } from 'cdk-lambda-runtime-hacker/cdkv2';
 ```
