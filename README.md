@@ -1,5 +1,9 @@
 # cdk-lambda-runtime-hacker
 
+[![npm](https://img.shields.io/npm/v/cdk-lambda-runtime-hacker?label=cdk-lambda-runtime-hacker)](https://www.npmjs.com/package/cdk-lambda-runtime-hacker)
+[![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/isotoma/cdk-lambda-runtime-hacker)](./package.json)
+[![NPM](https://img.shields.io/npm/l/cdk-lambda-runtime-hacker)](./LICENSE)
+
 For hacking Lambda runtime versions in CDK
 
 Note that this is definitely not safe in general. You might find that
