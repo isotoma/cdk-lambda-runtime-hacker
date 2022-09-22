@@ -42,7 +42,7 @@
         }
     },
     "devDependencies": {
-        "@types/node": ">=10",
+        "@types/node": ">=16",
         "typescript": ">=3.0.0",
         "@aws-cdk/assert": "^1.18.0",
         "auto-changelog": "^1.16.2",
