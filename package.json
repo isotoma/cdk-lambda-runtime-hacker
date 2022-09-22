@@ -1,0 +1,65 @@
+{
+    "name": "cdk-lambda-runtime-hacker",
+    "version": "0.0.0",
+    "description": "Hack runtimes of Lambdas",
+    "license": "MIT",
+    "author": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/isotoma/cdk-lambda-runtime-hacker"
+    },
+    "keywords": [
+        "cdk",
+        "lambda"
+    ],
+    "scripts": {
+        "test": "jest",
+        "tsc": "tsc",
+        "clean": "rm -rf build/",
+        "compile": "npm run clean && npm run -- tsc --outDir build/ && cp package.json README.md ./build/",
+        "version": "auto-changelog --template ./changelog_template.hbs -p && git add CHANGELOG.md",
+        "lint": "eslint 'index.ts' 'test/**/*.ts' jest.config.js --fix",
+        "lint-check": "eslint 'index.ts' 'test/**/*.ts' jest.config.js --max-warnings 0"
+    },
+    "peerDependencies": {
+        "@aws-cdk/aws-lambda": "^1.18.0",
+        "@aws-cdk/core": "^1.18.0",
+        "aws-cdk-lib": "^2.0.0",
+        "constructs": "^10.0.0"
+    },
+    "peerDependenciesMeta": {
+        "@aws-cdk/aws-lambda": {
+            "optional": true
+        },
+        "@aws-cdk/aws-core": {
+            "optional": true
+        },
+        "aws-cdk-lib": {
+            "optional": true
+        },
+        "constructs": {
+            "optional": true
+        }
+    },
+    "devDependencies": {
+        "@types/node": ">=10",
+        "typescript": ">=3.0.0",
+        "@aws-cdk/assert": "^1.18.0",
+        "auto-changelog": "^1.16.2",
+        "@aws-cdk/aws-lambda": "^1.18.0",
+        "@aws-cdk/aws-s3": "^1.18.0",
+        "@aws-cdk/aws-s3-notifications": "^1.18.0",
+        "@aws-cdk/core": "^1.18.0",
+        "aws-cdk-lib": "^2.15.0",
+        "constructs": "^10.0.0",
+        "jest": "^26.0.0",
+        "ts-jest": "^26.0.0",
+        "eslint": "6.8.0",
+        "eslint-config-prettier": "6.9.0",
+        "eslint-plugin-prettier": "3.1.2",
+        "prettier": "1.19.1",
+        "@types/jest": "^26.0.0",
+        "@typescript-eslint/eslint-plugin": "4.8.2",
+        "@typescript-eslint/parser": "4.8.2"
+    }
+}
