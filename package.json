@@ -31,7 +31,7 @@
         "@aws-cdk/aws-lambda": {
             "optional": true
         },
-        "@aws-cdk/aws-core": {
+        "@aws-cdk/core": {
             "optional": true
         },
         "aws-cdk-lib": {
